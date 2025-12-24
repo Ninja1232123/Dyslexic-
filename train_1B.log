@@ -1,0 +1,24 @@
+
+Device: cuda
+GPU: Tesla P40
+VRAM: 25.6 GB
+π/2 Model: 1,106,898,688 parameters (1.11B)
+
+Weight stats (π/2 units):
+  Std: 0.012731 (target: 0.012732)
+  Actual std (×π/2): 0.019997
+
+Loading: all_phases_combined.jsonl
+
+============================================================
+π/2 Training - FULL LOGGING
+============================================================
+Steps: 20000
+Learning rate: 0.0001
+Warmup: 500
+Device: cuda
+AMP: True
+Output: output_pi2_1B
+Log: output_pi2_1B/training_log.jsonl
+============================================================
+

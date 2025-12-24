@@ -1,0 +1,612 @@
+
+Device: cuda
+GPU: Tesla P40
+VRAM: 25.6 GB
+π/2 Model: 743,490,720 parameters (0.74B)
+
+Weight stats (π/2 units):
+  Std: 0.816482 (target: 0.012732)
+  Actual std (×π/2): 1.282526
+
+Loading: curriculum.jsonl
+
+============================================================
+π/2 Training - FULL LOGGING
+============================================================
+Steps: 22000
+Learning rate: 0.001
+Warmup: 500
+Device: cuda
+AMP: True
+Output: output_pi2_b
+Log: output_pi2_b/training_log.jsonl
+============================================================
+
+Step 10/22000 | Loss: 5.1554 | PPL: 173.4 | Avg: 384.5715 | Recent: 384.5715 | LR: 1.80e-05
+  W_std: 19.63330 | W_actual: 30.83992 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1207
+Step 20/22000 | Loss: 8.9142 | PPL: 7437.2 | Avg: 276.3233 | Recent: 276.3233 | LR: 3.80e-05
+  W_std: 19.63336 | W_actual: 30.84000 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1233
+Step 30/22000 | Loss: 17.7339 | PPL: 50320396.6 | Avg: 195.5812 | Recent: 195.5812 | LR: 5.80e-05
+  W_std: 19.63342 | W_actual: 30.84010 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1243
+Step 40/22000 | Loss: 18.2593 | PPL: 85100716.1 | Avg: 229.9288 | Recent: 229.9288 | LR: 7.80e-05
+  W_std: 19.63367 | W_actual: 30.84050 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1247
+Step 50/22000 | Loss: 369.7102 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 277.4650 | Recent: 277.4650 | LR: 9.80e-05
+  W_std: 19.63400 | W_actual: 30.84102 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1249
+Step 60/22000 | Loss: 765.6256 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 284.3901 | Recent: 284.3901 | LR: 1.18e-04
+  W_std: 19.63414 | W_actual: 30.84124 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1251
+Step 70/22000 | Loss: 27.5692 | PPL: 940028207947.3 | Avg: 316.8788 | Recent: 316.8788 | LR: 1.38e-04
+  W_std: 19.63442 | W_actual: 30.84167 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1253
+Step 80/22000 | Loss: 216.8570 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 296.4573 | Recent: 296.4573 | LR: 1.58e-04
+  W_std: 19.63447 | W_actual: 30.84176 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1254
+Step 90/22000 | Loss: 34.0285 | PPL: 600354581009844.0 | Avg: 296.6505 | Recent: 296.6505 | LR: 1.78e-04
+  W_std: 19.63467 | W_actual: 30.84207 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1254
+Step 100/22000 | Loss: 250.2242 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 289.7168 | Recent: 289.7168 | LR: 1.98e-04
+  W_std: 19.63474 | W_actual: 30.84218 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1255
+Step 110/22000 | Loss: 855.7504 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 292.9713 | Recent: 283.8113 | LR: 2.18e-04
+  W_std: 19.63488 | W_actual: 30.84240 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1255
+Step 120/22000 | Loss: 15.9025 | PPL: 8060313.1 | Avg: 281.4486 | Recent: 282.4736 | LR: 2.38e-04
+  W_std: 19.63510 | W_actual: 30.84275 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1256
+Step 130/22000 | Loss: 142.9482 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 284.7929 | Recent: 311.5564 | LR: 2.58e-04
+  W_std: 19.63545 | W_actual: 30.84330 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1256
+Step 140/22000 | Loss: 568.5306 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 301.6577 | Recent: 330.3492 | LR: 2.78e-04
+  W_std: 19.63606 | W_actual: 30.84425 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1256
+Step 150/22000 | Loss: 300.5154 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 323.4785 | Recent: 346.4852 | LR: 2.98e-04
+  W_std: 19.63714 | W_actual: 30.84595 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1256
+Step 160/22000 | Loss: 297.4521 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 320.6335 | Recent: 342.3796 | LR: 3.18e-04
+  W_std: 624.03049 | W_actual: 980.22480 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1256
+Step 170/22000 | Loss: 315.8961 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 332.1774 | Recent: 342.8865 | LR: 3.38e-04
+  W_std: 624.03049 | W_actual: 980.22480 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1257
+Step 180/22000 | Loss: 100.8155 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 327.0033 | Recent: 351.4402 | LR: 3.58e-04
+  W_std: 624.03050 | W_actual: 980.22481 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1257
+Step 190/22000 | Loss: 779.4589 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 333.9244 | Recent: 367.4709 | LR: 3.78e-04
+  W_std: 624.03051 | W_actual: 980.22483 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1257
+Step 200/22000 | Loss: 544.7105 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 358.3453 | Recent: 426.9738 | LR: 3.98e-04
+  W_std: 624.03057 | W_actual: 980.22492 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1257
+Step 210/22000 | Loss: 49.4218 | PPL: 2908234178407996850176.0 | Avg: 351.9494 | Recent: 416.8252 | LR: 4.18e-04
+  W_std: 624.03058 | W_actual: 980.22494 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1257
+Step 220/22000 | Loss: 738.4997 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 352.5283 | Recent: 437.8240 | LR: 4.38e-04
+  W_std: 624.03062 | W_actual: 980.22500 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1257
+Step 230/22000 | Loss: 589.2413 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 353.8383 | Recent: 443.5973 | LR: 4.58e-04
+  W_std: 624.03064 | W_actual: 980.22503 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1257
+Step 240/22000 | Loss: 67.3108 | PPL: 170894586046549463885024329728.0 | Avg: 362.2241 | Recent: 447.0171 | LR: 4.78e-04
+  W_std: 624.03067 | W_actual: 980.22508 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1257
+Step 250/22000 | Loss: 1023.2816 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 381.1258 | Recent: 467.5968 | LR: 4.98e-04
+  W_std: 624.03070 | W_actual: 980.22513 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1257
+Step 260/22000 | Loss: 43.8756 | PPL: 11348378417010176000.0 | Avg: 380.8698 | Recent: 477.2479 | LR: 5.18e-04
+  W_std: 624.03074 | W_actual: 980.22520 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1257
+Step 270/22000 | Loss: 480.6081 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 391.7955 | Recent: 493.1461 | LR: 5.38e-04
+  W_std: 624.03076 | W_actual: 980.22523 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1257
+Step 280/22000 | Loss: 516.7598 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 402.9069 | Recent: 539.5332 | LR: 5.58e-04
+  W_std: 624.35542 | W_actual: 980.73520 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1257
+Step 290/22000 | Loss: 613.7068 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 414.3680 | Recent: 567.2108 | LR: 5.78e-04
+  W_std: 624.35544 | W_actual: 980.73523 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1258
+Step 300/22000 | Loss: 510.4102 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 423.4507 | Recent: 553.6615 | LR: 5.98e-04
+  W_std: 624.35545 | W_actual: 980.73524 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1258
+Step 310/22000 | Loss: 34.2755 | PPL: 768504026979841.1 | Avg: 418.0857 | Recent: 556.9721 | LR: 6.18e-04
+  W_std: 624.35545 | W_actual: 980.73525 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1258
+Step 320/22000 | Loss: 451.7447 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 425.2542 | Recent: 585.2513 | LR: 6.38e-04
+  W_std: 624.35545 | W_actual: 980.73525 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1258
+Step 330/22000 | Loss: 536.1869 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 417.1637 | Recent: 562.8121 | LR: 6.58e-04
+  W_std: 624.35545 | W_actual: 980.73525 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1258
+Step 340/22000 | Loss: 770.1502 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 432.4812 | Recent: 601.0980 | LR: 6.78e-04
+  W_std: 624.35546 | W_actual: 980.73526 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1258
+Step 350/22000 | Loss: 247.3461 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 434.4994 | Recent: 567.9335 | LR: 6.98e-04
+  W_std: 624.35546 | W_actual: 980.73527 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1258
+Step 360/22000 | Loss: 626.1686 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 442.0170 | Recent: 600.9996 | LR: 7.18e-04
+  W_std: 624.35549 | W_actual: 980.73531 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1258
+Step 370/22000 | Loss: 331.6125 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 447.9488 | Recent: 599.5629 | LR: 7.38e-04
+  W_std: 624.35553 | W_actual: 980.73537 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1258
+Step 380/22000 | Loss: 75.7772 | PPL: 812124481764013883923086731902976.0 | Avg: 440.8039 | Recent: 546.9156 | LR: 7.58e-04
+  W_std: 624.35553 | W_actual: 980.73537 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1258
+Step 390/22000 | Loss: 582.3456 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 460.5222 | Recent: 594.3694 | LR: 7.78e-04
+  W_std: 624.35554 | W_actual: 980.73539 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1258
+Step 400/22000 | Loss: 36.2140 | PPL: 5340135407575394.0 | Avg: 454.3231 | Recent: 546.9402 | LR: 7.98e-04
+  W_std: 624.35554 | W_actual: 980.73540 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1258
+Step 410/22000 | Loss: 97.0733 | PPL: 1440102163746214342855205137119600751673344.0 | Avg: 447.2032 | Recent: 537.4673 | LR: 8.18e-04
+  W_std: 624.35555 | W_actual: 980.73540 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1258
+Step 420/22000 | Loss: 461.2485 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 453.6823 | Recent: 544.6522 | LR: 8.38e-04
+  W_std: 624.35555 | W_actual: 980.73540 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1258
+Step 430/22000 | Loss: 392.8276 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 448.7162 | Recent: 552.8394 | LR: 8.58e-04
+  W_std: 624.35555 | W_actual: 980.73541 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1258
+Step 440/22000 | Loss: 55.8559 | PPL: 1811016149865109699690496.0 | Avg: 442.4723 | Recent: 476.4422 | LR: 8.78e-04
+  W_std: 624.35555 | W_actual: 980.73541 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1258
+Step 450/22000 | Loss: 2220.8201 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 440.2543 | Recent: 460.3964 | LR: 8.98e-04
+  W_std: 624.35556 | W_actual: 980.73542 | NearInt: 100.0% | Mem: 7.2GB | Tok/s: 1258
+Step 460/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.18e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.8% | Mem: 7.2GB | Tok/s: 1258
+Step 470/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.38e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.6% | Mem: 7.2GB | Tok/s: 1258
+Step 480/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.58e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.5% | Mem: 7.2GB | Tok/s: 1258
+Step 490/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.78e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.5% | Mem: 7.2GB | Tok/s: 1258
+Step 500/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.98e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.5% | Mem: 7.2GB | Tok/s: 1258
+Step 510/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.4% | Mem: 7.2GB | Tok/s: 1258
+Step 520/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.4% | Mem: 7.2GB | Tok/s: 1258
+Step 530/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.4% | Mem: 7.2GB | Tok/s: 1258
+Step 540/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.3% | Mem: 7.2GB | Tok/s: 1258
+Step 550/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.3% | Mem: 7.2GB | Tok/s: 1258
+Step 560/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.3% | Mem: 7.2GB | Tok/s: 1258
+Step 570/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.3% | Mem: 7.2GB | Tok/s: 1258
+Step 580/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.3% | Mem: 7.2GB | Tok/s: 1258
+Step 590/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.2% | Mem: 7.2GB | Tok/s: 1258
+Step 600/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.2% | Mem: 7.2GB | Tok/s: 1258
+Step 610/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.2% | Mem: 7.2GB | Tok/s: 1258
+Step 620/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.2% | Mem: 7.2GB | Tok/s: 1258
+Step 630/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.2% | Mem: 7.2GB | Tok/s: 1258
+Step 640/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.2% | Mem: 7.2GB | Tok/s: 1258
+Step 650/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.2% | Mem: 7.2GB | Tok/s: 1258
+Step 660/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.2% | Mem: 7.2GB | Tok/s: 1258
+Step 670/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.2% | Mem: 7.2GB | Tok/s: 1258
+Step 680/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.2% | Mem: 7.2GB | Tok/s: 1258
+Step 690/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.2% | Mem: 7.2GB | Tok/s: 1258
+Step 700/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.2% | Mem: 7.2GB | Tok/s: 1258
+Step 710/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.1% | Mem: 7.2GB | Tok/s: 1258
+Step 720/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.1% | Mem: 7.2GB | Tok/s: 1258
+Step 730/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.1% | Mem: 7.2GB | Tok/s: 1257
+Step 740/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.1% | Mem: 7.2GB | Tok/s: 1257
+Step 750/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.1% | Mem: 7.2GB | Tok/s: 1257
+Step 760/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.1% | Mem: 7.2GB | Tok/s: 1257
+Step 770/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.1% | Mem: 7.2GB | Tok/s: 1257
+Step 780/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.1% | Mem: 7.2GB | Tok/s: 1257
+Step 790/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.1% | Mem: 7.2GB | Tok/s: 1257
+Step 800/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 1.00e-03
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.1% | Mem: 7.2GB | Tok/s: 1257
+Step 810/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.1% | Mem: 7.2GB | Tok/s: 1257
+Step 820/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.1% | Mem: 7.2GB | Tok/s: 1257
+Step 830/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.1% | Mem: 7.2GB | Tok/s: 1257
+Step 840/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.1% | Mem: 7.2GB | Tok/s: 1257
+Step 850/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.1% | Mem: 7.2GB | Tok/s: 1257
+Step 860/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.1% | Mem: 7.2GB | Tok/s: 1257
+Step 870/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.1% | Mem: 7.2GB | Tok/s: 1257
+Step 880/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.1% | Mem: 7.2GB | Tok/s: 1257
+Step 890/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.1% | Mem: 7.2GB | Tok/s: 1257
+Step 900/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1257
+Step 910/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1257
+Step 920/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1257
+Step 930/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1257
+Step 940/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1257
+Step 950/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1257
+Step 960/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1257
+Step 970/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1257
+Step 980/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1257
+Step 990/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1257
+Step 1000/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1257
+Step 1010/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1257
+Step 1020/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1257
+Step 1030/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.99e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1257
+Step 1040/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.98e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1257
+Step 1050/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.98e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1257
+Step 1060/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.98e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1256
+Step 1070/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.98e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1256
+Step 1080/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.98e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1256
+Step 1090/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.98e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1256
+Step 1100/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.98e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1256
+Step 1110/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.98e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1256
+Step 1120/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.98e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1256
+Step 1130/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.98e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1256
+Step 1140/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.98e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1256
+Step 1150/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.98e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 9.0% | Mem: 7.2GB | Tok/s: 1256
+Step 1160/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.98e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1170/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.98e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1180/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.98e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1190/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.97e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1200/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.97e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1210/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.97e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1220/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.97e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1230/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.97e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1240/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.97e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1250/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.97e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1260/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.97e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1270/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.97e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1280/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.97e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1290/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.97e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1300/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.97e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1310/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.97e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1320/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.96e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1330/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.96e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1340/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.96e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1350/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.96e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1360/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.96e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1370/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.96e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1380/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.96e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1390/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.96e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1400/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.96e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1256
+Step 1410/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.96e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1255
+Step 1420/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.95e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1255
+Step 1430/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.95e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1255
+Step 1440/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.95e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1255
+Step 1450/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.95e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1255
+Step 1460/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.95e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1255
+Step 1470/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.95e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1255
+Step 1480/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.95e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1255
+Step 1490/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.95e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1255
+Step 1500/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.95e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1255
+Step 1510/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.95e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1255
+Step 1520/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.94e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1255
+Step 1530/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.94e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.9% | Mem: 7.2GB | Tok/s: 1255
+Step 1540/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.94e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1550/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.94e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1560/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.94e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1570/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.94e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1580/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.94e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1590/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.94e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1600/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.94e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1610/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.93e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1620/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.93e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1630/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.93e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1640/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.93e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1650/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.93e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1660/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.93e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1670/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.93e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1680/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.93e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1690/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.92e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1700/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.92e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1710/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.92e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1720/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.92e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1730/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.92e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1740/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.92e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1750/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.92e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1760/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.92e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1770/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.91e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1780/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.91e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1255
+Step 1790/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.91e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1254
+Step 1800/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.91e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1254
+Step 1810/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.91e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1254
+Step 1820/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.91e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1254
+Step 1830/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.91e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1254
+Step 1840/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.90e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1254
+Step 1850/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.90e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1254
+Step 1860/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.90e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1254
+Step 1870/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.90e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1254
+Step 1880/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.90e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1254
+Step 1890/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.90e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1254
+Step 1900/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.90e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1254
+Step 1910/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.89e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1254
+Step 1920/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.89e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1254
+Step 1930/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.89e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1254
+Step 1940/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.89e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1254
+Step 1950/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.89e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1254
+Step 1960/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.89e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1254
+Step 1970/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.89e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1254
+Step 1980/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.88e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.8% | Mem: 7.2GB | Tok/s: 1254
+Step 1990/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.88e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2000/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.88e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2010/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.88e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2020/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.88e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2030/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.88e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2040/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.87e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2050/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.87e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2060/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.87e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2070/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.87e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2080/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.87e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2090/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.87e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2100/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.86e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2110/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.86e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2120/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.86e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2130/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.86e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2140/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.86e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2150/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.86e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2160/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.85e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2170/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.85e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2180/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.85e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2190/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.85e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2200/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.85e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2210/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.84e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2220/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.84e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2230/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.84e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2240/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.84e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2250/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.84e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2260/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.84e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2270/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.83e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2280/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.83e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2290/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.83e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2300/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.83e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2310/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.83e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2320/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.82e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2330/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.82e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2340/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.82e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2350/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.82e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2360/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.82e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2370/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.81e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2380/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.81e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1254
+Step 2390/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.81e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2400/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.81e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2410/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.81e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2420/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.80e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2430/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.80e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2440/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.80e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2450/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.80e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2460/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.80e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2470/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.79e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2480/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.79e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2490/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.79e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2500/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.79e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2510/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.79e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2520/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.78e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2530/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.78e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2540/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.78e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2550/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.78e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2560/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.78e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2570/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.77e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2580/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.77e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2590/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.77e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2600/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.77e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2610/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.76e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2620/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.76e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2630/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.76e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2640/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.76e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2650/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.76e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2660/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.75e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2670/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.75e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2680/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.75e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2690/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.75e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2700/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.74e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2710/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.74e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2720/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.74e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2730/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.74e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2740/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.73e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2750/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.73e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2760/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.73e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2770/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.73e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2780/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.73e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2790/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.72e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2800/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.72e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2810/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.72e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2820/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.72e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2830/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.71e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2840/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.71e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2850/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.71e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2860/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.71e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2870/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.70e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.7% | Mem: 7.2GB | Tok/s: 1253
+Step 2880/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.70e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.6% | Mem: 7.2GB | Tok/s: 1253
+Step 2890/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.70e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.6% | Mem: 7.2GB | Tok/s: 1253
+Step 2900/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.70e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.6% | Mem: 7.2GB | Tok/s: 1253
+Step 2910/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.69e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.6% | Mem: 7.2GB | Tok/s: 1253
+Step 2920/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.69e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.6% | Mem: 7.2GB | Tok/s: 1253
+Step 2930/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.69e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.6% | Mem: 7.2GB | Tok/s: 1253
+Step 2940/22000 | Loss: nan | PPL: nan | Avg: nan | Recent: nan | LR: 9.69e-04
+  W_std: 0.00000 | W_actual: 0.00000 | NearInt: 8.6% | Mem: 7.2GB | Tok/s: 1253

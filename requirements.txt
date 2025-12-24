@@ -1,0 +1,82 @@
+# π/2 Training Requirements - Full Linux Setup
+
+# ============================================
+# Core ML Framework
+# ============================================
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+numpy>=1.24.0
+
+# ============================================
+# HuggingFace Ecosystem
+# ============================================
+transformers>=4.30.0
+datasets>=2.12.0
+tokenizers>=0.13.0
+accelerate>=0.20.0
+safetensors>=0.3.0
+
+# ============================================
+# Training & Optimization
+# ============================================
+bitsandbytes>=0.39.0          # 8-bit optimizers, quantization
+peft>=0.4.0                   # Parameter-efficient fine-tuning (LoRA)
+# deepspeed - removed, DataParallel sufficient for 2x P40
+# flash-attn - removed, requires SM 80+ (P40 is SM 61)
+
+# ============================================
+# Monitoring & Logging
+# ============================================
+tensorboard>=2.13.0
+wandb>=0.15.0                 # Weights & Biases
+tqdm>=4.65.0
+
+# ============================================
+# Audio Processing
+# ============================================
+scipy>=1.10.0
+# librosa>=0.10.0  # removed - llvmlite/numba issues with Python 3.12
+soundfile>=0.12.0
+pydub>=0.25.1
+
+# ============================================
+# Image/Video Processing
+# ============================================
+Pillow>=9.5.0
+opencv-python>=4.7.0
+imageio>=2.31.0
+
+# ============================================
+# Data Handling
+# ============================================
+pandas>=2.0.0
+pyarrow>=12.0.0               # Parquet support
+h5py>=3.8.0                   # HDF5 support
+jsonlines>=3.1.0
+
+# ============================================
+# Web & API (if running server)
+# ============================================
+flask>=2.3.0
+flask-cors>=4.0.0
+waitress>=2.1.2
+requests>=2.31.0
+
+# ============================================
+# Utilities
+# ============================================
+pyyaml>=6.0
+python-dotenv>=1.0.0
+psutil>=5.9.0                 # System monitoring
+gputil>=1.4.0                 # GPU monitoring
+matplotlib>=3.7.0             # Plotting
+seaborn>=0.12.0
+
+# ============================================
+# Development
+# ============================================
+pytest>=7.3.0
+black>=23.0.0
+ipython>=8.0.0
+jupyter>=1.0.0

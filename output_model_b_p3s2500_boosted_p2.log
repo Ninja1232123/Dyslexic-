@@ -1,0 +1,32 @@
+
+============================================================
+Boosted Embedding Phase 2 Training
+============================================================
+Using GPU: 1
+
+Model: 1.57B
+π/2 Model Created
+  Parameters: 1,681,224,192
+  Hidden: 2304
+  Layers: 24
+  Heads: 18
+  Weight std (expected): 0.012732
+  Weight std (actual):   0.012735
+  π/2 = 1.570796
+
+Applying π/2 phase quantization...
+
+Loading checkpoint: /home/keeg/pi2_training/output_model_b_phase3/checkpoints/hebbian_step_2500.pt
+Traceback (most recent call last):
+  File "/home/keeg/pi2_training/boost_embeddings_and_train.py", line 170, in <module>
+    main()
+  File "/home/keeg/pi2_training/boost_embeddings_and_train.py", line 116, in main
+    checkpoint = torch.load(args.checkpoint, map_location='cpu')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/keeg/pi2_training/.venv/lib/python3.12/site-packages/torch/serialization.py", line 1005, in load
+    with _open_zipfile_reader(opened_file) as opened_zipfile:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/keeg/pi2_training/.venv/lib/python3.12/site-packages/torch/serialization.py", line 457, in __init__
+    super().__init__(torch._C.PyTorchFileReader(name_or_buffer))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: PytorchStreamReader failed reading zip archive: failed finding central directory

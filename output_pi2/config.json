@@ -1,0 +1,11 @@
+{
+  "num_steps": 5000,
+  "lr": 0.0003,
+  "warmup_steps": 500,
+  "device": "cuda",
+  "use_amp": true,
+  "model_params": 305341440,
+  "half_pi": 1.5707963267948966,
+  "pi2_std": 0.012732,
+  "start_time": "2025-12-24T00:58:06.811187"
+}

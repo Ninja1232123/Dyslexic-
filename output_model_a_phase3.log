@@ -1,0 +1,260 @@
+
+============================================================
+π/2 Hebbian Training Setup
+============================================================
+GPU: Tesla P40 (23.9GB)
+
+Model: 1.57B (2304h, 24L)
+π/2 Model Created
+  Parameters: 1,681,224,192
+  Hidden: 2304
+  Layers: 24
+  Heads: 18
+  Weight std (expected): 0.012732
+  Weight std (actual):   0.012736
+  π/2 = 1.570796
+
+Applying π/2 phase quantization...
+  Magnitude params: 1,831,993,344
+  Memory estimate: 7328.0 MB
+
+Resuming from: /home/keeg/pi2_training/output_model_a_phase2/checkpoints/hebbian_step_5000(Phase2A).pt
+  Loaded checkpoint from step 5000
+  Previous avg loss: 0.0558
+
+GPU memory used: 9.16 GB
+
+Loading data: /home/keeg/pi2_training/phase3_all_combined.jsonl
+
+============================================================
+Starting π/2 Hebbian Training
+============================================================
+Learning rate: 0.001
+Steps: 5000
+Rotation angles: [0.0, 1.570796, 3.141593, 4.712389]
+============================================================
+
+Step 10/5000 | Consistency: 0.0396 | Avg: 0.0692 | Samples/s: 1
+Step 20/5000 | Consistency: 0.0433 | Avg: 0.0596 | Samples/s: 1
+Step 30/5000 | Consistency: 0.0831 | Avg: 0.0592 | Samples/s: 1
+Step 40/5000 | Consistency: 0.0626 | Avg: 0.0622 | Samples/s: 1
+Step 50/5000 | Consistency: 0.0388 | Avg: 0.0563 | Samples/s: 1
+Step 60/5000 | Consistency: 0.0802 | Avg: 0.0564 | Samples/s: 1
+Step 70/5000 | Consistency: 0.0598 | Avg: 0.0591 | Samples/s: 1
+Step 80/5000 | Consistency: 0.0689 | Avg: 0.0586 | Samples/s: 1
+Step 90/5000 | Consistency: 0.0393 | Avg: 0.0581 | Samples/s: 1
+Step 100/5000 | Consistency: 0.0442 | Avg: 0.0582 | Samples/s: 1
+Step 110/5000 | Consistency: 0.0568 | Avg: 0.0572 | Samples/s: 1
+Step 120/5000 | Consistency: 0.0497 | Avg: 0.0562 | Samples/s: 1
+Step 130/5000 | Consistency: 0.0702 | Avg: 0.0572 | Samples/s: 1
+Step 140/5000 | Consistency: 0.0410 | Avg: 0.0578 | Samples/s: 1
+Step 150/5000 | Consistency: 0.0872 | Avg: 0.0579 | Samples/s: 1
+Step 160/5000 | Consistency: 0.1492 | Avg: 0.0606 | Samples/s: 1
+Step 170/5000 | Consistency: 0.1123 | Avg: 0.0625 | Samples/s: 1
+Step 180/5000 | Consistency: 0.1335 | Avg: 0.0663 | Samples/s: 1
+Step 190/5000 | Consistency: 0.0691 | Avg: 0.0677 | Samples/s: 1
+Step 200/5000 | Consistency: 0.0921 | Avg: 0.0682 | Samples/s: 1
+Step 210/5000 | Consistency: 0.0446 | Avg: 0.0680 | Samples/s: 1
+Step 220/5000 | Consistency: 0.0698 | Avg: 0.0679 | Samples/s: 1
+Step 230/5000 | Consistency: 0.0644 | Avg: 0.0683 | Samples/s: 1
+Step 240/5000 | Consistency: 0.0974 | Avg: 0.0684 | Samples/s: 1
+Step 250/5000 | Consistency: 0.0384 | Avg: 0.0676 | Samples/s: 1
+Step 260/5000 | Consistency: 0.0519 | Avg: 0.0671 | Samples/s: 1
+Step 270/5000 | Consistency: 0.0561 | Avg: 0.0665 | Samples/s: 1
+Step 280/5000 | Consistency: 0.0377 | Avg: 0.0655 | Samples/s: 1
+Step 290/5000 | Consistency: 0.0492 | Avg: 0.0653 | Samples/s: 1
+Step 300/5000 | Consistency: 0.0456 | Avg: 0.0647 | Samples/s: 1
+Step 310/5000 | Consistency: 0.0494 | Avg: 0.0641 | Samples/s: 1
+Step 320/5000 | Consistency: 0.0889 | Avg: 0.0640 | Samples/s: 1
+Step 330/5000 | Consistency: 0.0647 | Avg: 0.0648 | Samples/s: 1
+Step 340/5000 | Consistency: 0.0730 | Avg: 0.0652 | Samples/s: 1
+Step 350/5000 | Consistency: 0.1016 | Avg: 0.0657 | Samples/s: 1
+Step 360/5000 | Consistency: 0.0663 | Avg: 0.0657 | Samples/s: 1
+Step 370/5000 | Consistency: 0.0453 | Avg: 0.0657 | Samples/s: 1
+Step 380/5000 | Consistency: 0.0611 | Avg: 0.0655 | Samples/s: 1
+Step 390/5000 | Consistency: 0.1737 | Avg: 0.0670 | Samples/s: 1
+Step 400/5000 | Consistency: 0.0874 | Avg: 0.0677 | Samples/s: 1
+Step 410/5000 | Consistency: 0.0402 | Avg: 0.0686 | Samples/s: 1
+Step 420/5000 | Consistency: 0.0643 | Avg: 0.0685 | Samples/s: 1
+Step 430/5000 | Consistency: 0.0930 | Avg: 0.0686 | Samples/s: 1
+Step 440/5000 | Consistency: 0.0816 | Avg: 0.0686 | Samples/s: 1
+Step 450/5000 | Consistency: 0.0397 | Avg: 0.0687 | Samples/s: 1
+Step 460/5000 | Consistency: 0.0980 | Avg: 0.0685 | Samples/s: 1
+Step 470/5000 | Consistency: 0.0607 | Avg: 0.0687 | Samples/s: 1
+Step 480/5000 | Consistency: 0.0856 | Avg: 0.0685 | Samples/s: 1
+Step 490/5000 | Consistency: 0.0570 | Avg: 0.0684 | Samples/s: 1
+Step 500/5000 | Consistency: 0.0363 | Avg: 0.0683 | Samples/s: 1
+  → Saved checkpoint: hebbian_step_500.pt
+Step 510/5000 | Consistency: 0.0744 | Avg: 0.0680 | Samples/s: 1
+Step 520/5000 | Consistency: 0.0577 | Avg: 0.0677 | Samples/s: 1
+Step 530/5000 | Consistency: 0.0389 | Avg: 0.0676 | Samples/s: 1
+Step 540/5000 | Consistency: 0.0550 | Avg: 0.0673 | Samples/s: 1
+Step 550/5000 | Consistency: 0.2918 | Avg: 0.0696 | Samples/s: 1
+Step 560/5000 | Consistency: 0.0712 | Avg: 0.0702 | Samples/s: 1
+Step 570/5000 | Consistency: 0.1681 | Avg: 0.0713 | Samples/s: 1
+Step 580/5000 | Consistency: 0.0723 | Avg: 0.0723 | Samples/s: 1
+Step 590/5000 | Consistency: 0.1556 | Avg: 0.0732 | Samples/s: 1
+Step 600/5000 | Consistency: 0.0953 | Avg: 0.0735 | Samples/s: 1
+Step 610/5000 | Consistency: 0.1096 | Avg: 0.0743 | Samples/s: 1
+Step 620/5000 | Consistency: 0.1318 | Avg: 0.0753 | Samples/s: 1
+Step 630/5000 | Consistency: 0.1328 | Avg: 0.0759 | Samples/s: 1
+Step 640/5000 | Consistency: 0.2016 | Avg: 0.0773 | Samples/s: 1
+Step 650/5000 | Consistency: 0.0463 | Avg: 0.0785 | Samples/s: 1
+Step 660/5000 | Consistency: 0.0994 | Avg: 0.0783 | Samples/s: 1
+Step 670/5000 | Consistency: 0.0962 | Avg: 0.0784 | Samples/s: 1
+Step 680/5000 | Consistency: 0.1962 | Avg: 0.0797 | Samples/s: 1
+Step 690/5000 | Consistency: 0.1044 | Avg: 0.0804 | Samples/s: 1
+Step 700/5000 | Consistency: 0.1885 | Avg: 0.0814 | Samples/s: 1
+Step 710/5000 | Consistency: 0.2503 | Avg: 0.0835 | Samples/s: 1
+Step 720/5000 | Consistency: 0.1287 | Avg: 0.0844 | Samples/s: 1
+Step 730/5000 | Consistency: 0.1735 | Avg: 0.0847 | Samples/s: 1
+Step 740/5000 | Consistency: 0.1225 | Avg: 0.0857 | Samples/s: 1
+Step 750/5000 | Consistency: 0.1288 | Avg: 0.0862 | Samples/s: 1
+Step 760/5000 | Consistency: 0.1983 | Avg: 0.0874 | Samples/s: 1
+Step 770/5000 | Consistency: 0.3593 | Avg: 0.0884 | Samples/s: 1
+Step 780/5000 | Consistency: 0.2348 | Avg: 0.0912 | Samples/s: 1
+Step 790/5000 | Consistency: 0.1374 | Avg: 0.0921 | Samples/s: 1
+Step 800/5000 | Consistency: 0.2512 | Avg: 0.0937 | Samples/s: 1
+Step 810/5000 | Consistency: 0.2322 | Avg: 0.0948 | Samples/s: 1
+Step 820/5000 | Consistency: 0.1460 | Avg: 0.0960 | Samples/s: 0
+Step 830/5000 | Consistency: 0.1647 | Avg: 0.0966 | Samples/s: 0
+Step 840/5000 | Consistency: 0.2121 | Avg: 0.0978 | Samples/s: 0
+Step 850/5000 | Consistency: 0.1629 | Avg: 0.0976 | Samples/s: 0
+Step 860/5000 | Consistency: 0.1709 | Avg: 0.0983 | Samples/s: 0
+Step 870/5000 | Consistency: 0.2238 | Avg: 0.0994 | Samples/s: 0
+Step 880/5000 | Consistency: 0.2315 | Avg: 0.1007 | Samples/s: 0
+Step 890/5000 | Consistency: 0.0867 | Avg: 0.1008 | Samples/s: 0
+Step 900/5000 | Consistency: 0.2587 | Avg: 0.1015 | Samples/s: 0
+Step 910/5000 | Consistency: 0.1032 | Avg: 0.1022 | Samples/s: 0
+Step 920/5000 | Consistency: 0.1370 | Avg: 0.1023 | Samples/s: 0
+Step 930/5000 | Consistency: 0.2364 | Avg: 0.1026 | Samples/s: 0
+Step 940/5000 | Consistency: 0.1382 | Avg: 0.1039 | Samples/s: 0
+Step 950/5000 | Consistency: 0.0783 | Avg: 0.1038 | Samples/s: 0
+Step 960/5000 | Consistency: 0.1302 | Avg: 0.1037 | Samples/s: 0
+Step 970/5000 | Consistency: 0.0577 | Avg: 0.1049 | Samples/s: 0
+Step 980/5000 | Consistency: 0.0626 | Avg: 0.1046 | Samples/s: 0
+Step 990/5000 | Consistency: 0.1349 | Avg: 0.1044 | Samples/s: 0
+Step 1000/5000 | Consistency: 0.2731 | Avg: 0.1058 | Samples/s: 0
+  → Saved checkpoint: hebbian_step_1000.pt
+Step 1010/5000 | Consistency: 0.0695 | Avg: 0.1064 | Samples/s: 0
+Step 1020/5000 | Consistency: 0.1670 | Avg: 0.1064 | Samples/s: 0
+Step 1030/5000 | Consistency: 0.3484 | Avg: 0.1081 | Samples/s: 0
+Step 1040/5000 | Consistency: 0.2317 | Avg: 0.1094 | Samples/s: 0
+Step 1050/5000 | Consistency: 0.1751 | Avg: 0.1092 | Samples/s: 0
+Step 1060/5000 | Consistency: 0.1983 | Avg: 0.1100 | Samples/s: 0
+Step 1070/5000 | Consistency: 0.2528 | Avg: 0.1112 | Samples/s: 0
+Step 1080/5000 | Consistency: 0.1720 | Avg: 0.1115 | Samples/s: 0
+Step 1090/5000 | Consistency: 0.2505 | Avg: 0.1125 | Samples/s: 0
+Step 1100/5000 | Consistency: 0.1196 | Avg: 0.1133 | Samples/s: 0
+Step 1110/5000 | Consistency: 0.0738 | Avg: 0.1131 | Samples/s: 0
+Step 1120/5000 | Consistency: 0.1681 | Avg: 0.1131 | Samples/s: 0
+Step 1130/5000 | Consistency: 0.1788 | Avg: 0.1130 | Samples/s: 0
+Step 1140/5000 | Consistency: 0.0949 | Avg: 0.1133 | Samples/s: 0
+Step 1150/5000 | Consistency: 0.1631 | Avg: 0.1133 | Samples/s: 0
+Step 1160/5000 | Consistency: 0.1784 | Avg: 0.1138 | Samples/s: 0
+Step 1170/5000 | Consistency: 0.0348 | Avg: 0.1135 | Samples/s: 0
+Step 1180/5000 | Consistency: 0.1662 | Avg: 0.1132 | Samples/s: 0
+Step 1190/5000 | Consistency: 0.0612 | Avg: 0.1132 | Samples/s: 0
+Step 1200/5000 | Consistency: 0.1921 | Avg: 0.1135 | Samples/s: 0
+Step 1210/5000 | Consistency: 0.0678 | Avg: 0.1132 | Samples/s: 0
+Step 1220/5000 | Consistency: 0.1245 | Avg: 0.1132 | Samples/s: 0
+Step 1230/5000 | Consistency: 0.1655 | Avg: 0.1135 | Samples/s: 0
+Step 1240/5000 | Consistency: 0.0530 | Avg: 0.1131 | Samples/s: 0
+Step 1250/5000 | Consistency: 0.2171 | Avg: 0.1134 | Samples/s: 0
+Step 1260/5000 | Consistency: 0.2219 | Avg: 0.1143 | Samples/s: 0
+Step 1270/5000 | Consistency: 0.0517 | Avg: 0.1143 | Samples/s: 0
+Step 1280/5000 | Consistency: 0.2294 | Avg: 0.1146 | Samples/s: 0
+Step 1290/5000 | Consistency: 0.2064 | Avg: 0.1146 | Samples/s: 0
+Step 1300/5000 | Consistency: 0.2071 | Avg: 0.1153 | Samples/s: 0
+Step 1310/5000 | Consistency: 0.1521 | Avg: 0.1156 | Samples/s: 0
+Step 1320/5000 | Consistency: 0.2162 | Avg: 0.1161 | Samples/s: 0
+Step 1330/5000 | Consistency: 0.0787 | Avg: 0.1167 | Samples/s: 0
+Step 1340/5000 | Consistency: 0.1781 | Avg: 0.1169 | Samples/s: 0
+Step 1350/5000 | Consistency: 0.2557 | Avg: 0.1178 | Samples/s: 0
+Step 1360/5000 | Consistency: 0.2259 | Avg: 0.1186 | Samples/s: 0
+Step 1370/5000 | Consistency: 0.1015 | Avg: 0.1181 | Samples/s: 0
+Step 1380/5000 | Consistency: 0.2858 | Avg: 0.1188 | Samples/s: 0
+Step 1390/5000 | Consistency: 0.3123 | Avg: 0.1202 | Samples/s: 0
+Step 1400/5000 | Consistency: 0.1025 | Avg: 0.1201 | Samples/s: 0
+Step 1410/5000 | Consistency: 0.2084 | Avg: 0.1207 | Samples/s: 0
+Step 1420/5000 | Consistency: 0.1475 | Avg: 0.1211 | Samples/s: 0
+Step 1430/5000 | Consistency: 0.0966 | Avg: 0.1210 | Samples/s: 0
+Step 1440/5000 | Consistency: 0.1608 | Avg: 0.1209 | Samples/s: 0
+Step 1450/5000 | Consistency: 0.0911 | Avg: 0.1217 | Samples/s: 0
+Step 1460/5000 | Consistency: 0.0853 | Avg: 0.1216 | Samples/s: 0
+Step 1470/5000 | Consistency: 0.1727 | Avg: 0.1217 | Samples/s: 0
+Step 1480/5000 | Consistency: 0.1816 | Avg: 0.1219 | Samples/s: 0
+Step 1490/5000 | Consistency: 0.0337 | Avg: 0.1223 | Samples/s: 0
+Step 1500/5000 | Consistency: 0.0710 | Avg: 0.1218 | Samples/s: 0
+  → Saved checkpoint: hebbian_step_1500.pt
+Step 1510/5000 | Consistency: 0.2761 | Avg: 0.1224 | Samples/s: 0
+Step 1520/5000 | Consistency: 0.1763 | Avg: 0.1227 | Samples/s: 0
+Step 1530/5000 | Consistency: 0.0521 | Avg: 0.1223 | Samples/s: 0
+Step 1540/5000 | Consistency: 0.2566 | Avg: 0.1225 | Samples/s: 0
+Step 1550/5000 | Consistency: 0.2626 | Avg: 0.1235 | Samples/s: 0
+Step 1560/5000 | Consistency: 0.1700 | Avg: 0.1236 | Samples/s: 0
+Step 1570/5000 | Consistency: 0.2703 | Avg: 0.1240 | Samples/s: 0
+Step 1580/5000 | Consistency: 0.2101 | Avg: 0.1248 | Samples/s: 0
+Step 1590/5000 | Consistency: 0.1812 | Avg: 0.1251 | Samples/s: 0
+Step 1600/5000 | Consistency: 0.1999 | Avg: 0.1253 | Samples/s: 0
+Step 1610/5000 | Consistency: 0.2354 | Avg: 0.1261 | Samples/s: 0
+Step 1620/5000 | Consistency: 0.2334 | Avg: 0.1268 | Samples/s: 0
+Step 1630/5000 | Consistency: 0.2414 | Avg: 0.1275 | Samples/s: 0
+Step 1640/5000 | Consistency: 0.2866 | Avg: 0.1283 | Samples/s: 0
+Step 1650/5000 | Consistency: 0.2410 | Avg: 0.1289 | Samples/s: 0
+Step 1660/5000 | Consistency: 0.2158 | Avg: 0.1295 | Samples/s: 0
+Step 1670/5000 | Consistency: 0.2404 | Avg: 0.1301 | Samples/s: 0
+Step 1680/5000 | Consistency: 0.2091 | Avg: 0.1305 | Samples/s: 0
+Step 1690/5000 | Consistency: 0.1457 | Avg: 0.1307 | Samples/s: 0
+Step 1700/5000 | Consistency: 0.1694 | Avg: 0.1310 | Samples/s: 0
+Step 1710/5000 | Consistency: 0.2368 | Avg: 0.1315 | Samples/s: 0
+Step 1720/5000 | Consistency: 0.1054 | Avg: 0.1313 | Samples/s: 0
+Step 1730/5000 | Consistency: 0.2716 | Avg: 0.1312 | Samples/s: 0
+Step 1740/5000 | Consistency: 0.2334 | Avg: 0.1320 | Samples/s: 0
+Step 1750/5000 | Consistency: 0.2139 | Avg: 0.1325 | Samples/s: 0
+Step 1760/5000 | Consistency: 0.1094 | Avg: 0.1324 | Samples/s: 0
+Step 1770/5000 | Consistency: 0.2371 | Avg: 0.1330 | Samples/s: 0
+Step 1780/5000 | Consistency: 0.1644 | Avg: 0.1333 | Samples/s: 0
+Step 1790/5000 | Consistency: 0.1352 | Avg: 0.1334 | Samples/s: 0
+Step 1800/5000 | Consistency: 0.2884 | Avg: 0.1340 | Samples/s: 0
+Step 1810/5000 | Consistency: 0.1535 | Avg: 0.1343 | Samples/s: 0
+Step 1820/5000 | Consistency: 0.1853 | Avg: 0.1346 | Samples/s: 0
+Step 1830/5000 | Consistency: 0.2523 | Avg: 0.1351 | Samples/s: 0
+Step 1840/5000 | Consistency: 0.2317 | Avg: 0.1356 | Samples/s: 0
+Step 1850/5000 | Consistency: 0.0956 | Avg: 0.1360 | Samples/s: 0
+Step 1860/5000 | Consistency: 0.2310 | Avg: 0.1361 | Samples/s: 0
+Step 1870/5000 | Consistency: 0.2751 | Avg: 0.1368 | Samples/s: 0
+Step 1880/5000 | Consistency: 0.2414 | Avg: 0.1373 | Samples/s: 0
+Step 1890/5000 | Consistency: 0.2234 | Avg: 0.1379 | Samples/s: 0
+Step 1900/5000 | Consistency: 0.2570 | Avg: 0.1385 | Samples/s: 0
+Step 1910/5000 | Consistency: 0.1122 | Avg: 0.1386 | Samples/s: 0
+Step 1920/5000 | Consistency: 0.2323 | Avg: 0.1389 | Samples/s: 0
+Step 1930/5000 | Consistency: 0.2294 | Avg: 0.1393 | Samples/s: 0
+Step 1940/5000 | Consistency: 0.0748 | Avg: 0.1394 | Samples/s: 0
+Step 1950/5000 | Consistency: 0.1862 | Avg: 0.1393 | Samples/s: 0
+Step 1960/5000 | Consistency: 0.2929 | Avg: 0.1400 | Samples/s: 0
+Step 1970/5000 | Consistency: 0.1905 | Avg: 0.1406 | Samples/s: 0
+Step 1980/5000 | Consistency: 0.2069 | Avg: 0.1410 | Samples/s: 0
+Step 1990/5000 | Consistency: 0.3468 | Avg: 0.1417 | Samples/s: 0
+Step 2000/5000 | Consistency: 0.2561 | Avg: 0.1423 | Samples/s: 0
+Traceback (most recent call last):
+  File "/home/keeg/pi2_training/.venv/lib/python3.12/site-packages/torch/serialization.py", line 629, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol, _disable_byteorder_record)
+  File "/home/keeg/pi2_training/.venv/lib/python3.12/site-packages/torch/serialization.py", line 863, in _save
+    zip_file.write_record(name, storage.data_ptr(), num_bytes)
+RuntimeError: [enforce fail at inline_container.cc:764] . PytorchStreamWriter failed writing file data/828: file write failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/keeg/pi2_training/train_hebbian.py", line 403, in <module>
+    main()
+  File "/home/keeg/pi2_training/train_hebbian.py", line 391, in main
+    train_hebbian(
+  File "/home/keeg/pi2_training/train_hebbian.py", line 281, in train_hebbian
+    torch.save({
+  File "/home/keeg/pi2_training/.venv/lib/python3.12/site-packages/torch/serialization.py", line 628, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "/home/keeg/pi2_training/.venv/lib/python3.12/site-packages/torch/serialization.py", line 476, in __exit__
+    self.file_like.write_end_of_file()
+RuntimeError: [enforce fail at inline_container.cc:595] . unexpected pos 8326505792 vs 8326505688

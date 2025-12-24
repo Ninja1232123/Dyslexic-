@@ -1,0 +1,70 @@
+
+Device: cuda
+GPU: Tesla P40
+VRAM: 25.6 GB
+π/2 Model: 1,617,364,992 parameters (1.62B)
+
+Weight stats (π/2 units):
+  Std: 0.012731 (target: 0.012732)
+  Actual std (×π/2): 0.019997
+
+Loading: all_phases_combined.jsonl
+
+============================================================
+π/2 Training - FULL LOGGING
+============================================================
+Steps: 20000
+Learning rate: 0.0001
+Warmup: 500
+Device: cuda
+AMP: True
+Output: output_pi2_1.7B
+Log: output_pi2_1.7B/training_log.jsonl
+============================================================
+
+Exception ignored in: <generator object Pi2Dataset.__iter__ at 0x7681e2256ce0>
+Exception ignored in: <generator object Pi2Dataset.__iter__ at 0x7681e2256df0>
+Traceback (most recent call last):
+Traceback (most recent call last):
+Exception ignored in: <generator object Pi2Dataset.__iter__ at 0x7681e2256df0>
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+Exception ignored in: <generator object Pi2Dataset.__iter__ at 0x7681e2256df0>
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+RuntimeError: generator ignored GeneratorExit
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+RuntimeError: generator ignored GeneratorExit
+RuntimeError: generator ignored GeneratorExit
+RuntimeError: generator ignored GeneratorExit
+Traceback (most recent call last):
+  File "/home/keeg/pi2_training/train_pi2.py", line 648, in <module>
+    main()
+  File "/home/keeg/pi2_training/train_pi2.py", line 636, in main
+    train(
+  File "/home/keeg/pi2_training/train_pi2.py", line 431, in train
+    scaler.step(optimizer)
+  File "/home/keeg/pi2_training/.venv/lib/python3.12/site-packages/torch/cuda/amp/grad_scaler.py", line 452, in step
+    retval = self._maybe_opt_step(optimizer, optimizer_state, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/keeg/pi2_training/.venv/lib/python3.12/site-packages/torch/cuda/amp/grad_scaler.py", line 350, in _maybe_opt_step
+    retval = optimizer.step(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/keeg/pi2_training/.venv/lib/python3.12/site-packages/torch/optim/optimizer.py", line 385, in wrapper
+    out = func(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/keeg/pi2_training/.venv/lib/python3.12/site-packages/torch/optim/optimizer.py", line 76, in _use_grad
+    ret = func(self, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/keeg/pi2_training/.venv/lib/python3.12/site-packages/torch/optim/adamw.py", line 176, in step
+    has_complex = self._init_group(
+                  ^^^^^^^^^^^^^^^^^
+  File "/home/keeg/pi2_training/.venv/lib/python3.12/site-packages/torch/optim/adamw.py", line 123, in _init_group
+    state["exp_avg"] = torch.zeros_like(
+                       ^^^^^^^^^^^^^^^^^
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 394.00 MiB. GPU 0 has a total capacity of 23.87 GiB of which 37.81 MiB is free. Including non-PyTorch memory, this process has 23.83 GiB memory in use. Of the allocated memory 23.40 GiB is allocated by PyTorch, and 258.26 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

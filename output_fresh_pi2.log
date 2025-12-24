@@ -1,0 +1,24 @@
+
+============================================================
+π/2 Hebbian Training Setup
+============================================================
+GPU: Tesla P40 (23.9GB)
+
+Model: 1.57B (2304h, 24L)
+π/2 Model Created
+  Parameters: 1,681,224,192
+  Hidden: 2304
+  Layers: 24
+  Heads: 18
+  Weight std (expected): 0.012732
+  Weight std (actual):   0.012730
+  π/2 = 1.570796
+
+Applying π/2 phase quantization...
+Traceback (most recent call last):
+  File "/home/keeg/pi2_training/train_hebbian.py", line 478, in <module>
+    main()
+  File "/home/keeg/pi2_training/train_hebbian.py", line 418, in main
+    print(f"  Magnitude params: {stats['magnitude']:,}")
+                                 ~~~~~^^^^^^^^^^^^^
+KeyError: 'magnitude'

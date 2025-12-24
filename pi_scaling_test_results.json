@@ -1,0 +1,69 @@
+[
+  {
+    "test": "Round-trip Precision",
+    "samples": 1000,
+    "exact_matches": 1000,
+    "accuracy": "100.0000%",
+    "errors": 0,
+    "status": "PASS"
+  },
+  {
+    "test": "Information Density",
+    "integer_entropy": 3.2902,
+    "pi_scaled_entropy": 3.3206,
+    "entropy_gain": 0.0304,
+    "integer_patterns": 1000,
+    "pi_scaled_patterns": 1300,
+    "pattern_gain": 300,
+    "status": "PASS"
+  },
+  {
+    "test": "Gradient Flow",
+    "int_grad_norm": 0.013528,
+    "pi_grad_norm": 0.013535,
+    "int_grad_std": 5.1e-05,
+    "pi_grad_std": 5.1e-05,
+    "grad_std_ratio": 1.0004,
+    "status": "COMPARABLE"
+  },
+  {
+    "test": "Pattern Learning",
+    "integer": {
+      "train_loss": 0.036818,
+      "test_loss": 0.040209,
+      "accuracy": "100.00%",
+      "convergence_epoch": 21
+    },
+    "pi_scaled": {
+      "train_loss": 0.073538,
+      "test_loss": 0.069476,
+      "accuracy": "99.00%",
+      "convergence_epoch": 47
+    },
+    "winner": "Integer",
+    "accuracy_diff": "-1.00%",
+    "status": "COMPARABLE"
+  },
+  {
+    "test": "Numerical Stability",
+    "avg_int_error": 1.8947806286936004e-14,
+    "avg_pi_error": 0,
+    "max_int_error": 1.1368683772161603e-13,
+    "max_pi_error": 0,
+    "pi_more_stable": true,
+    "status": "PASS"
+  },
+  {
+    "test": "Semantic Leverage",
+    "unique_integers": 256,
+    "unique_pi_values": 256,
+    "min_integer_gap": 1,
+    "min_pi_gap": 1.57079633,
+    "leverage_factor": 1.5708,
+    "integer_bits": 8.0,
+    "pi_effective_bits": 12.98,
+    "theoretical_semantic_5x": "8 bits \u2192 40 semantic bits",
+    "pi_over_2": 1.5707963268,
+    "status": "VALIDATED"
+  }
+]

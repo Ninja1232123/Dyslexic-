@@ -1,0 +1,22 @@
+# Model weights (too large)
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+
+# Output directories with weights
+output_pi2_*/
+
+# Virtual environments
+.venv/
+venv/
+__pycache__/
+
+# Large data files
+*.jsonl
+
+# Temp files
+*.pyc
+.DS_Store
+temp_leftovers/

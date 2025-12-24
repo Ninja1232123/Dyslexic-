@@ -1,0 +1,63 @@
+
+Device: cuda
+GPU: Tesla P40
+VRAM: 25.6 GB
+π/2 Model: 1,617,364,992 parameters (1.62B)
+
+Weight stats (π/2 units):
+  Std: 0.816481 (target: 0.012732)
+  Actual std (×π/2): 1.282526
+
+Loading: all_phases_combined.jsonl
+
+============================================================
+π/2 Training - FULL LOGGING
+============================================================
+Steps: 20000
+Learning rate: 0.01
+Warmup: 500
+Device: cuda
+AMP: True
+Output: output_pi2_1.7B_snap
+Log: output_pi2_1.7B_snap/training_log.jsonl
+============================================================
+
+Exception ignored in: <generator object Pi2Dataset.__iter__ at 0x71da0f2c08c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+Exception ignored in: <generator object Pi2Dataset.__iter__ at 0x71da0f2c08c0>
+Exception ignored in: <generator object Pi2Dataset.__iter__ at 0x71da0f2c07b0>
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+Exception ignored in: <generator object Pi2Dataset.__iter__ at 0x71da0f2c08c0>
+    self._target(*self._args, **self._kwargs)
+Traceback (most recent call last):
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+RuntimeError: generator ignored GeneratorExit
+RuntimeError: generator ignored GeneratorExit
+RuntimeError: generator ignored GeneratorExit
+    self._target(*self._args, **self._kwargs)
+RuntimeError: generator ignored GeneratorExit
+Step 10/20000 | Loss: 201.1645 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 194.6731 | Recent: 194.6731 | LR: 1.80e-04 | GradNorm: 127551602688.0000
+  W_std: 0.81650 | W_actual: 1.28256 | NearInt: 100.0% | Mem: 14.3GB | Tok/s: 371
+Step 20/20000 | Loss: 232.7926 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 203.3991 | Recent: 203.3991 | LR: 3.80e-04 | GradNorm: 45014671425536.0000
+  W_std: 0.81650 | W_actual: 1.28256 | NearInt: 100.0% | Mem: 14.3GB | Tok/s: 376
+Step 30/20000 | Loss: 237.6819 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 216.7128 | Recent: 216.7128 | LR: 5.80e-04 | GradNorm: 6548836843520.0000
+  W_std: 0.81650 | W_actual: 1.28256 | NearInt: 100.0% | Mem: 14.3GB | Tok/s: 378
+Step 40/20000 | Loss: 242.5377 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 221.5444 | Recent: 221.5444 | LR: 7.80e-04 | GradNorm: 4763041660928.0000
+  W_std: 0.81650 | W_actual: 1.28256 | NearInt: 100.0% | Mem: 14.3GB | Tok/s: 378
+Step 50/20000 | Loss: 231.2383 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 225.2965 | Recent: 225.2965 | LR: 9.80e-04 | GradNorm: 46195183452160.0000
+  W_std: 0.81650 | W_actual: 1.28256 | NearInt: 100.0% | Mem: 14.3GB | Tok/s: 379
+Step 60/20000 | Loss: 237.0275 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 227.7243 | Recent: 227.7243 | LR: 1.18e-03 | GradNorm: 3363764699136.0000
+  W_std: 0.81650 | W_actual: 1.28256 | NearInt: 100.0% | Mem: 14.3GB | Tok/s: 379
+Step 70/20000 | Loss: 245.2931 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 229.8112 | Recent: 229.8112 | LR: 1.38e-03 | GradNorm: 20702006607872.0000
+  W_std: 0.81650 | W_actual: 1.28256 | NearInt: 100.0% | Mem: 14.3GB | Tok/s: 379
+Step 80/20000 | Loss: 241.9750 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 230.9206 | Recent: 230.9206 | LR: 1.58e-03 | GradNorm: 4182961815552.0000
+  W_std: 0.81650 | W_actual: 1.28256 | NearInt: 100.0% | Mem: 14.3GB | Tok/s: 380
+Step 90/20000 | Loss: 244.2042 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 232.8166 | Recent: 232.8166 | LR: 1.78e-03 | GradNorm: 5087737413632.0000
+  W_std: 0.81650 | W_actual: 1.28256 | NearInt: 100.0% | Mem: 14.3GB | Tok/s: 380
+Step 100/20000 | Loss: 236.2892 | PPL: 26881171418161356094253400435962903554686976.0 | Avg: 233.2707 | Recent: 233.2707 | LR: 1.98e-03 | GradNorm: 160860718759936.000
