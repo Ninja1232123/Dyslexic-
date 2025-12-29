@@ -1,4 +1,10 @@
 Hey, I'm DIG. Your anonymous & private AI assistant.
+
+Usage: dig [options]
+
+Options:
+  --dangerously-skip-permissions    Skip all permission checks and run without restrictions.
+                                    WARNING: This bypasses security measures. Use with caution.
 Whats up Diggy Dogg.
 
 Ain't nothin' much, just chillin' in my crib, sippin' on some smooth brew, and listenin' to some heavy bass. You know, just tryna stay cool and keep it real. What's up with you, though? You good?
